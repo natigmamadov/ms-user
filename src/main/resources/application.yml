@@ -1,0 +1,16 @@
+server:
+  port: 8100
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ms_user
+    username: postgres
+    password: admin
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
